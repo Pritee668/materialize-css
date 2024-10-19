@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Brand Image</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <style>
+    .carousel .carousel-item img {
+      height: 40vh;
+      width: 40vw; 
+    }
+    .brand-logo img{
+        border-radius: 50%;
+    }
+   body{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(198,11,11,0.949258927203694) 21%, rgba(252,176,69,1) 100%);
+   }
+   h5{
+    width: 30vw;
+    margin-left: 35%;
+    padding: 0.3rem;
+    border-radius: 4px;
+    text-align: center;
+   }
+   .card-content{
+    color: white;
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgb(134, 71, 176) 0%, rgba(175, 30, 30, 0.949) 21%, rgb(196, 142, 66) 100%);
+   }
+   .about-section {
+      padding: 50px 0;
+     color: white;
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgb(134, 71, 176) 0%, rgba(175, 30, 30, 0.949) 21%, rgb(196, 142, 66) 100%);
+    }
+    .about-image {
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+    .contact-section{
+        color: white;
+      
+      background: rgb(131,58,180);
+      background: linear-gradient(90deg, rgb(134, 71, 176) 0%, rgba(175, 30, 30, 0.949) 21%, rgb(196, 142, 66) 100%);
+    }
+    .material-icons{
+        height: 2rem;
+        width: 2rem;
+    }
+  </style>
+</head>
+<body>
+<div class="navbar-fixed">
+  <nav class="blue">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Qyle7egny_YcDqTFxOM-qkbf_o-14kE71A&s" 
+             alt="Brand Logo" class="responsive-img" height="50px" width="50px" style="margin-top: 7px;">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="p.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="images/calculator.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="images/myntra.png"></a>
+    <a class="carousel-item" href="#three!"><img src="images/simon-say.jpg"></a>
+    <a class="carousel-item" href="#four!"><img src="images/stopwatch.jpg"></a>
+    <a class="carousel-item" href="#five!"><img src="images/tic-tac-toe.jpg"></a>
+    <a class="carousel-item" href="#six!"><img src="images/calculator.jpg"></a>
+    <a class="carousel-item" href="#seven!"><img src="images/weather.jpg"></a>
+  </div>
+
+
+  <h5 class="pulse blue white-text">About Materialize Css</h5>
+  <div class="container about-section" id="about">
+    <div class="row">
+      <div class="col s12 m4">
+        <img src="images/about.jpeg" alt="About Us Image" class="about-image responsive-img">
+      </div>
+      <div class="col s12 m4">
+        <h5>Who We Are</h5>
+        <p>
+          We are a dedicated team of professionals committed to providing top-quality services and innovative solutions. Our mission is to enhance user experience and satisfaction.
+        </p>
+        <h5>Our Vision</h5>
+        <p>
+          Our vision is to lead our industry by setting the standards for quality and customer service, continuously adapting to the evolving needs of our clients.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h5 class="pulse blue white-text">Services</h5>
+  <div class="container services-section" id="services">
+    <h2 class="center-align">Our Services</h2>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/wed.png" alt="Service 1">
+          </div>
+          <div class="card-content card-text">
+            <span class="card-title">Web Development</span>
+            <p>We provide cutting-edge web development services tailored to your business needs.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/mobile.jpeg" alt="Service 2">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Mobile App Development</span>
+            <p>Our team builds high-performance mobile apps for Android and iOS platforms.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="images/digit.jpeg" alt="Service 3">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Digital Marketing</span>
+            <p>Grow your business with our comprehensive digital marketing strategies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h5 class="pulse blue white-text">Contact Us</h5>
+  <div class="container contact-section white-text" id="contact">
+    
+    <div class="row white-text">
+      <form class="col s12">
+        <div class="row" style="color: white;">
+          <div class="input-field col s12 m6">
+            <input id="name" type="text" class="validate">
+            <label for="name">Full Name</label>
+          </div>
+          
+          <div class="input-field col s12 m6">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+  
+        <div class="row center-align">
+          <button class="btn waves-effect waves-light blue" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  
+    <div class="row center-align">
+      <div class="col s6 m4">
+        <i class="material-icons small">location_on</i>
+        <p>123 Main Street, City, Country</p>
+      </div>
+      <div class="col s6 m4">
+        <i class="material-icons small">phone</i>
+        <p>+1 234 567 890</p>
+      </div>
+      <div class="col s6 m4">
+        <i class="material-icons small">email</i>
+        <p>info@example.com</p>
+      </div>
+    </div>
+  </div>
+  
+
+  
+
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+      
+      elems = document.querySelectorAll('.fixed-action-btn');
+      M.FloatingActionButton.init(elems);
+      
+      elems = document.querySelectorAll('.carousel');
+      M.Carousel.init(elems);
+    });
+  </script>
+
+</body>
+</html>
